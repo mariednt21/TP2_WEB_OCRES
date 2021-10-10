@@ -15,15 +15,16 @@
 
 <body>
 	<header>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-2">
 					<div class="logo-search">
 						<img class="pull-left" src="img/logo.png" />
 					</div>
 				</div>
+				<!--bar de recherche disparait quand écran retrecit-->
+				<div class="d-none d-md-block col-5">
 
-				<div class="col-md-5">
 					<form method="POST" action="index.html">
 						<input type="search" required class="search">
 						<input type="submit" name="submit" value="Rechercher" class="submit">
@@ -31,7 +32,7 @@
 				</div>
 
 
-				<div class="col-md-5">
+				<div class="col-5">
 					<div class="user">
 						<a href="#">Luke Chesser</a>
 					</div>
@@ -40,28 +41,31 @@
 		</div>
 	</header>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<aside class="col-md-2">
-				<h3>Browse</h3>
-				<nav class="browse">
-					<ul class="main">
-						<li><a class="heavy" href="#">Heavy Rotation</a></li>
-						<li><a class="recent" href="#">Recent Activity</a></li>
-						<li><a class="top" href="#">Top Charts</a></li>
-						<li><a class="new" href="#">New Releases</a></li>
-					</ul>
-				</nav>
-				<h3>Your music</h3>
-				<nav class="music">
-					<ul class="main">
-						<li><a class="collection" href="#">Collection</a></li>
-						<li><a class="history" href="#">History</a></li>
-					</ul>
-				</nav>
-			</aside>
+			<!--aside  disparait quand écran retrecit-->
+			<div class="d-none d-md-block col-2">
+				<aside>
+					<h3>Browse</h3>
+					<nav class="browse">
+						<ul class="main">
+							<li><a class="heavy" href="#">Heavy Rotation</a></li>
+							<li><a class="recent" href="#">Recent Activity</a></li>
+							<li><a class="top" href="#">Top Charts</a></li>
+							<li><a class="new" href="#">New Releases</a></li>
+						</ul>
+					</nav>
+					<h3>Your music</h3>
+					<nav class="music">
+						<ul class="main">
+							<li><a class="collection" href="#">Collection</a></li>
+							<li><a class="history" href="#">History</a></li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
 
-			<main class="col-md-10">
+			<main class="col-sm-10">
 				<header>
 					<div class="container">
 						<div class="row">
